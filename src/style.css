@@ -302,6 +302,33 @@ svg {
   color: yellow;
 }
 
+/* uPCOMING */
+.upcoming-movie-container{
+  display: flex;
+  overflow: auto;
+}
+
+.upcoming-movie-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.date-ics {
+  color: #555555e3;
+}
+
+.watchlist-movie-container {
+  display: flex;
+  overflow: auto;
+}
+
+.watchlist-movie-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.movie-info button.active {
+  color: #04bd04;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .navbar {
