@@ -105,7 +105,7 @@ svg {
 
 /* Hero Slider */
 .hero-slider {
-  height: 100vh;
+  height: 115vh;
   margin-top: -80px;
   position: relative;
 }
@@ -214,7 +214,7 @@ svg {
   width: 91.6%;
   height: 250px;
   bottom: 0;
-  padding: 0 50px;
+  left: 20%;
   margin:0  3.7em;
   box-sizing: border-box;
   overflow: auto;
