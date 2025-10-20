@@ -439,82 +439,82 @@ svg {
 }
 
 @media (min-width: 768px) {
-    .detail-content {
-        flex-direction: row;
-        align-items: flex-start;
-    }
+  .detail-content {
+      flex-direction: row;
+      align-items: flex-start;
+  }
 }
 
 .detail-poster {
-    flex-shrink: 0;
-    width: 250px;
+  flex-shrink: 0;
+  width: 250px;
 }
 
 .detail-poster img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
 .detail-info {
-    max-width: 700px;
+  max-width: 700px;
 }
 
 .detail-info h1 {
-    font-size: 2.5em;
-    margin: 0 0 10px;
+  font-size: 2.5em;
+  margin: 0 0 10px;
 }
 
 .detail-info .tagline {
-    font-style: italic;
-    color: #ccc;
-    margin-bottom: 20px;
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
 .genres {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .genres span {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.9em;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9em;
 }
 
 .rating-runtime {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .rating-runtime .movie-rating {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
 }
 
 .rating-runtime .runtime {
-    font-size: 1.1em;
-    color: #ddd;
+  font-size: 1.1em;
+  color: #ddd;
 }
 
 .detail-info h3 {
-    margin-top: 30px;
-    font-size: 1.5em;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-    display: inline-block;
+  margin-top: 30px;
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  display: inline-block;
 }
 
 .detail-info .overview {
-    line-height: 1.7;
-    font-size: 1.1em;
+  line-height: 1.7;
+  font-size: 1.1em;
 }
 
 .loader {
@@ -673,54 +673,54 @@ svg {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .navbar {
-      display: flex;
-      justify-content: space-around;
-      padding: 0.3em 1em;
-    }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.3em 1em;
+  }
 
-    .nav-links {
-        width: 100%;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        display: none;
-    }
+  .nav-links {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     display: none;
+  }
 
-    .search {
-      width: 100px;
-    }
+  .search {
+    width: 100px;
+  }
 
-    .nav-links li {
-        margin: 5px 0;
-    }
+  .nav-links li {
+    margin: 5px 0;
+  }
 
-    .search input, .search button {
-        width: 40px;
-        margin-left: 1em;
-    }
+  .search input, .search button {
+    width: 40px;
+    margin-left: 1em;
+  }
 
-    .search.active .input {
-      width: 40%px;
-      color: #fff;
-      border-radius: 1px solid#04bd04;
-    }
+  .search.active .input {
+    width: 40%px;
+    color: #fff;
+    border-radius: 1px solid#04bd04;
+  }
 
-    .thumbnail{
-      justify-content: start;
-      bottom: -10em;
-      margin: 20px;
-      padding: 0 50px
-    }
+  .thumbnail{
+    justify-content: start;
+    bottom: -10em;
+    margin: 20px;
+    padding: 0 50px
+  }
 
-    .hero-slider .hero-list .hero-item .content h2 {
-      font-size: 26px;
-    }
+  .hero-slider .hero-list .hero-item .content h2 {
+    font-size: 26px;
+  }
 
-    .arrows {
-      top: 21%;
-    }
+  .arrows {
+    top: 21%;
+  }
 }
 
 /* Mobile view */
@@ -796,8 +796,7 @@ svg {
   }
   
   .hero-slider .hero-list .hero-item .content {
-    left: 5%;
-    top: 15%;
+    top: 35%;
     width: 90%;
     max-width: 90%;
   }
@@ -811,6 +810,7 @@ svg {
     font-size: 12px;
     letter-spacing: 5px;
     margin-bottom: 5px;
+    width: 70%;
   }
   
   .hero-slider .hero-list .hero-item .content p:nth-child(3) {
@@ -949,6 +949,7 @@ svg {
   
   .hero-slider .hero-list .hero-item .content p:nth-child(3) {
     -webkit-line-clamp: 2;
+    width: 70%;
   }
   
   .thumbnail {
