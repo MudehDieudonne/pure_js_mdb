@@ -722,3 +722,264 @@ svg {
       top: 21%;
     }
 }
+
+/* Mobile view */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  /* Navigation */
+  .navbar {
+    padding: 0.8em 1em;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.2em;
+    order: 1;
+  }
+  
+  .search {
+    order: 2;
+    margin-left: auto;
+    height: 40px;
+  }
+  
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    order: 3;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .input {
+    height: 12px;
+    padding: 12px;
+  }
+  
+  .search.active .input {
+    width: 150px;
+  }
+  
+  .search.active .btn {
+    transform: translateX(120px);
+  }
+  
+  .btn svg {
+    width: 20px;
+  }
+  
+  /* Hero Slider */
+  .hero-slider {
+    height: 70vh;
+    margin-top: -60px;
+  }
+  
+  .hero-slider .hero-list .hero-item img {
+    height: 85%;
+  }
+  
+  .hero-slider .hero-list .hero-item .content {
+    left: 5%;
+    top: 15%;
+    width: 90%;
+    max-width: 90%;
+  }
+  
+  .hero-slider .hero-list .hero-item .content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-slider .hero-list .hero-item .content p:nth-child(1) {
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .hero-slider .hero-list .hero-item .content p:nth-child(3) {
+    font-size: 14px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Arrows */
+  .arrows {
+    top: 20%;
+    right: 2%;
+  }
+  
+  .arrows button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+  
+  /* Thumbnails */
+  .thumbnail {
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    height: 150px;
+    margin: 0;
+    padding: 0 10px;
+    gap: 8px;
+  }
+  
+  .thumbnail .thum-item {
+    width: 100px;
+    height: 150px;
+  }
+  
+  /* Movie sections */
+  .popular-week,
+  .just-released,
+  .your-watch-list,
+  .your-likes {
+    margin: 1.5em 1em;
+  }
+  
+  .movie-card {
+    width: 180px;
+  }
+  
+  .movie-poster {
+    height: 270px;
+  }
+  
+  .movie-info {
+    padding: 10px;
+  }
+  
+  .movie-title {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  
+  .movie-rating {
+    font-size: 0.9em;
+  }
+  
+  .movie-rating svg {
+    width: 16px;
+  }
+  
+  /* Movie Details Page */
+  .movie-details-container {
+    padding-top: 60px;
+  }
+  
+  .detail-content {
+    padding: 20px 15px;
+    gap: 25px;
+  }
+  
+  .detail-poster {
+    width: 180px;
+    margin: 0 auto;
+  }
+  
+  .detail-info h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  
+  .detail-info .tagline {
+    text-align: center;
+  }
+  
+  .genres {
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .rating-runtime {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .detail-info h3 {
+    margin-top: 20px;
+    font-size: 1.3em;
+  }
+  
+  .detail-info .overview {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .site-footer {
+    padding: 1.5em 1em;
+    margin-top: 30px;
+    font-size: 0.8em;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 60vh;
+  }
+  
+  .hero-slider .hero-list .hero-item .content h2 {
+    font-size: 20px;
+  }
+  
+  .hero-slider .hero-list .hero-item .content p:nth-child(3) {
+    -webkit-line-clamp: 2;
+  }
+  
+  .thumbnail {
+    height: 130px;
+  }
+  
+  .thumbnail .thum-item {
+    width: 85px;
+    height: 130px;
+  }
+  
+  .movie-card {
+    width: 150px;
+  }
+  
+  .movie-poster {
+    height: 225px;
+  }
+  
+  .detail-poster {
+    width: 150px;
+  }
+  
+  .detail-info h1 {
+    font-size: 1.5em;
+  }
+  
+  .popular-week h2,
+  .just-released h2,
+  .your-watch-list h2,
+  .your-likes h2 {
+    font-size: 1.3em;
+  }
+}
