@@ -32,6 +32,9 @@ svg {
 .logo {
   font-size: 1.5em;
   font-weight: bold;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-links {
@@ -397,7 +400,6 @@ svg {
   margin-left: auto;
 }
 
-
 .movie-card-link {
     text-decoration: none;
     color: inherit;
@@ -440,8 +442,8 @@ svg {
 
 @media (min-width: 768px) {
   .detail-content {
-      flex-direction: row;
-      align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -671,55 +673,278 @@ svg {
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* Tablet View (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Navigation */
   .navbar {
-    display: flex;
-    justify-content: space-around;
-    padding: 0.3em 1em;
+    padding: 1em 2em;
   }
 
   .nav-links {
-    width: 100%;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     display: none;
-  }
-
-  .search {
-    width: 100px;
+    gap: 15px;
   }
 
   .nav-links li {
-    margin: 5px 0;
-  }
-
-  .search input, .search button {
-    width: 40px;
-    margin-left: 1em;
+    margin: 0 10px;
   }
 
   .search.active .input {
-    width: 40%px;
-    color: #fff;
-    border-radius: 1px solid#04bd04;
+    width: 200px;
   }
 
-  .thumbnail{
-    justify-content: start;
-    bottom: -10em;
-    margin: 20px;
-    padding: 0 50px
+  .search.active .btn {
+    transform: translateX(158px);
+  }
+
+  /* Hero Slider */
+  .hero-slider {
+    height: 80vh;
+    margin-top: -70px;
+  }
+
+  .hero-slider .hero-list .hero-item img {
+    height: 85%;
+  }
+
+  .hero-slider .hero-list .hero-item .content {
+    left: 5%;
+    top: 25%;
+    width: 400px;
   }
 
   .hero-slider .hero-list .hero-item .content h2 {
-    font-size: 26px;
+    font-size: 36px;
   }
 
+  .hero-slider .hero-list .hero-item .content p:nth-child(1) {
+    letter-spacing: 8px;
+    font-size: 14px;
+  }
+
+  /* Arrows */
   .arrows {
-    top: 21%;
+    top: 25%;
+    right: 3%;
+  }
+
+  .arrows button {
+    width: 38px;
+    height: 38px;
+  }
+
+  /* Thumbnails */
+  .thumbnail {
+    left: 15%;
+    width: 83%;
+    height: 200px;
+    margin: 0;
+    padding: 0 20px;
+    gap: 12px;
+  }
+
+  .thumbnail .thum-item {
+    width: 130px;
+    height: 180px;
+  }
+
+  /* Movie Sections */
+  .popular-week,
+  .just-released,
+  .your-watch-list,
+  .your-likes {
+    margin: 2em 1.5em;
+  }
+
+  .movie-card {
+    width: 220px;
+  }
+
+  .movie-poster {
+    height: 320px;
+  }
+
+  .movie-info {
+    padding: 12px;
+  }
+
+  .movie-title {
+    font-size: 1.05em;
+  }
+
+  /* Movie Details Page */
+  .movie-details-container {
+    padding-top: 70px;
+  }
+
+  .detail-content {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .detail-poster {
+    width: 220px;
+  }
+
+  .detail-info h1 {
+    font-size: 2.2em;
+  }
+
+  .detail-info .tagline {
+    font-size: 1.1em;
+  }
+
+  .rating-runtime {
+    gap: 25px;
+  }
+
+  .detail-info h3 {
+    font-size: 1.4em;
+  }
+
+  .detail-info .overview {
+    font-size: 1.05em;
+    line-height: 1.65;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 1.8em 1.5em;
+    margin-top: 35px;
+  }
+
+  /* Search bar adjustments */
+  .search {
+    height: 45px;
+  }
+
+  .input {
+    height: 13px;
+    padding: 13px 15px;
+  }
+
+  .btn {
+    font-size: 35px;
+  }
+
+  .btn svg {
+    width: 22px;
+  }
+
+  /* Movie containers */
+  .movie-container,
+  .upcoming-movie-container,
+  .watchlist-movie-container,
+  .your-likes-container {
+    gap: 15px;
+    padding-bottom: 25px;
+  }
+
+  .movie-card {
+    margin: 0 8px;
+  }
+
+  /* Font size adjustments */
+  body {
+    font-size: 15px;
+  }
+
+  .logo {
+    font-size: 1.3em;
+  }
+
+  .nav-links {
+    font-size: 0.95em;
+  }
+
+  .popular-week h2,
+  .just-released h2,
+  .your-watch-list h2,
+  .your-likes h2 {
+    font-size: 1.6em;
+  }
+
+  /* Loader adjustments */
+  .loader .circle {
+    width: 18px;
+    height: 18px;
+    margin: 0 8px;
+  }
+
+  .loader .circle .dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .loader .circle .outline {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Button and icon adjustments */
+  .add-to-watchlist-btn,
+  .like-icon {
+    padding: 7px;
+  }
+
+  .add-to-watchlist-btn svg,
+  .like-icon svg {
+    width: 20px;
+  }
+
+  .movie-rating svg {
+    width: 18px;
+  }
+
+  .date-ics {
+    width: 16px;
+  }
+}
+
+/* Large Tablet View (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbar {
+    padding: 1em 2.5em;
+  }
+
+  .hero-slider .hero-list .hero-item .content {
+    width: 450px;
+  }
+
+  .hero-slider .hero-list .hero-item .content h2 {
+    font-size: 42px;
+  }
+
+  .thumbnail {
+    left: 17%;
+    width: 66%;
+  }
+
+  .popular-week,
+  .just-released,
+  .your-watch-list,
+  .your-likes {
+    margin: 2em 2em;
+  }
+}
+
+/* Tablet Landscape Orientation */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+  .hero-slider {
+    height: 100vh;
+  }
+
+  .hero-slider .hero-list .hero-item .content {
+    top: 20%;
+  }
+
+  .thumbnail {
+    bottom: 30px;
+    height: 180px;
+  }
+
+  .thumbnail .thum-item {
+    width: 120px;
+    height: 160px;
   }
 }
 
@@ -787,7 +1012,7 @@ svg {
   
   /* Hero Slider */
   .hero-slider {
-    height: 70vh;
+    height: 85vh;
     margin-top: -60px;
   }
   
@@ -806,7 +1031,6 @@ svg {
     margin-bottom: 10px;
   }
 
-  /* hero slider */
   .hero-slider .hero-list .hero-item .content p:nth-child(1) {
     font-size: 12px;
     letter-spacing: 5px;
