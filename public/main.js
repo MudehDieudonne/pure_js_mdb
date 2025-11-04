@@ -173,7 +173,7 @@ function displayMovieCards(movies, containerSelector) {
         
         // Create an anchor tag to wrap the card
         const movieLink = document.createElement('a');
-        movieLink.href = `details.html?id=${movie.id}`;
+        movieLink.href = `./details.html?id=${movie.id}`;
         movieLink.classList.add('movie-card-link');
 
         movieLink.innerHTML = `

@@ -1,5 +1,5 @@
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
-const API_KEY = 'eab119f4519b3c48189fd1039aea8fed';
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const detailsContainer = document.getElementById('movie-details-container');
 const form = document.getElementById('form');
