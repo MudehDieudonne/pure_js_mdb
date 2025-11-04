@@ -9,8 +9,5 @@
       "source": "/details/:id", 
       "destination": "/details.html"
     }
-  ],
-  "builds": [
-    { "src": "dist/**", "use": "@vercel/static" }
   ]
 }
