@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <nav class="navbar">
+      <a class="logo" href="index.html" >Logo</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="details.html">Details</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="search">
+        <form id="form">
+          <input type="text" class="input" placeholder="Search...">
+        </form>
+        <button class="btn">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="movie-details-container" class="movie-details-container">
+        <div class="loader">
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+            <div class="circle">
+                <div class="dot"></div>
+                <div class="outline"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Movie DB. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="/src/details.js"></script>
+</body>
+</html>

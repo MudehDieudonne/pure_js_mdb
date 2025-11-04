@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { 
+      "source": "/details",
+      "destination": "/details.html"
+    },
+    { 
+      "source": "/details/:id", 
+      "destination": "/details.html"
+    }
+  ]
+}
